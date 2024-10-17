@@ -28,3 +28,11 @@ public class Login  {
         }
     }     
         // Main päättyy
+        
+
+    public static void generateEmail(String etu, String suku, String verkko) {
+        System.out.println(etu.toLowerCase() + "." + suku.toLowerCase() + "@" + verkko.toLowerCase());
+
+        // .toLowerCase muuttaa nimen kaikki merkit pieniksi
+        // Jos käyttäjä kirjoittaa nimensä isoilla alkukirjaimilla, ne ovat muutettava pieneksi sähköpostiosoitetta varten
+      }
