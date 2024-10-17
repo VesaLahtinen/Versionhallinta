@@ -36,3 +36,16 @@ public class Login  {
         // .toLowerCase muuttaa nimen kaikki merkit pieniksi
         // Jos käyttäjä kirjoittaa nimensä isoilla alkukirjaimilla, ne ovat muutettava pieneksi sähköpostiosoitetta varten
       }
+
+      public static void generateUsername(String etu, String suku) {
+       int length = suku.length();
+       String alku = etu.substring(0,4);
+       String loppu = suku.substring(length - 4);
+      
+       // suku.length laskee inputin kirjaimet/merkit
+       // (length - 4) ottaa pitkästä sukunimestä neljä viimeisintä kirjainta käyttäjänimeä varten
+   
+       System.out.println(alku.toLowerCase() + loppu.toLowerCase());
+   
+      }
+   }
